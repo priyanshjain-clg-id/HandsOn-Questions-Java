@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Arrayof5number {
+	
+	public void add() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the size of array : ");
+		int a = sc.nextInt();
+		int[] arr = new int[a];
+		System.out.println("Now you can add numbers into Array : ");
+		for(int i=0;i<a;i++)
+		{
+			arr[i] = sc.nextInt();
+		}
+		sc.close();
+		int sum=0;
+		for(int i : arr)
+		{
+			sum = sum + i;
+		}
+		System.out.println("Sum of the array is : "+ sum);
+	}
+	public static void main(String[] agr)
+	{
+		Arrayof5number a = new Arrayof5number();
+		a.add();
+	}
+
+}
